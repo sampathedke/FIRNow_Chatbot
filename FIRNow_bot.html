@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRNow</title>
+    <style>
+        body {
+            /* background: linear-gradient( rgb(0, 6, 55), rgb(53, 0, 0)); */
+            background-color: rgb(0, 5, 43);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: rgb(255, 0, 0);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .head {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            color: white;
+        }
+
+        .logo img {
+            width: 50px;
+        }
+
+        h1 {
+            margin-left: 10px;
+        }
+
+        .mid {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navi {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navi li {
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        .navi li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .navi li a:hover, .navi li a.active {
+            color: rgb(0, 8, 255);
+            text-decoration: underline;
+        }
+
+        .right {
+            display: flex;
+        }
+
+        .btn {
+            font-family: 'Kanit', sans-serif;
+            padding: 8px;
+            font-size: 15px;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+            background: none;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .btn:hover {
+            background-color: rgb(96, 168, 240);
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .home {
+            border: 2px solid rgb(194, 133, 248);
+            padding: 20px;
+            color: aliceblue;
+            display: flex;
+            align-items: flex-start;
+            /* width: 100%; */
+            /* max-width: 1200px; */
+            margin: auto;
+        }
+
+        .box {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            overflow-y: auto;
+            /* scrollbar-width: none; */
+            width: 45%;
+            height: auto;
+        }
+
+        .box p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .serv {
+            display: inline-block;
+            width: 45%;
+            color: antiquewhite;
+            padding: 20px;
+            margin-left: 50px;
+            border: 2px solid rgb(198, 138, 243);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(90, 0, 0);
+            color: white;
+            /* width: 100%; */
+            position: relative;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+        h4{
+          color: rgb(86, 143, 145);
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <img src="police.png" alt="FIRNow">
+        </div>
+        <h1>FIRNow</h1>
+        <nav class="mid">
+            <ul class="navi">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="#sec1">About Us</a></li>
+                <li><a href="#sec2">Services</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="right">
+            <button class="btn">Signup</button>
+            <button class="btn">Signin</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="home">
+            <img src="FIRNow1.png" alt="FIRNow" style="width: 45%; margin-right: 20px;">
+            <div class="box">
+              <h2 id="sec1" style="color: aquamarine;">About Us</h2>
+                <p>This FIRNow portal is a platform for Citizens to file crime related complaints online and seek antecedent verification of prospective employees (including for domestic help, drivers etc.), tenants or for any other purpose. Citizens can also seek certification of their own antecedents.</p>
+                <p>FIRNow Chatbot is a digital registration of First Information Reports (FIR), Status of FIR and provides users with relevant crime awareness information. The chatbot makes user-friendly, accessible, and capable of guiding users through the FIR registration process while educating them on various types of crimes and safety measures.</p>
+                <p>The portal consolidates data of current and past Crime occurrences across the country. This data has information pertaining to persons accused or convicted in criminal cases along with associated information such as property stolen/recovered, missing persons, recovered/unidentified dead bodies and so on. This information would help expedite Police investigations to solve crime as well as to provide antecedent verification services to citizens.</p>
+                <p>The chatbot provides users with important information about different types of crimes, how to recognize them, and take preventive measures.<br>The user-friendly interface and prompt responses encourage more people to use the chatbot for both reporting crimes and gaining knowledge.</p>
+                <p>The portal also generates various thematic reports of trends of incidence of crime across the country to facilitate policy analysis and interventions. To illustrate, reports such as those pertaining to crime against women & children, societal trends of crimes, patterns of crime involving groups belonging to a particular age or educational qualification and so on, crimes which are more prevalent in certain areas, can be generated from data in this portal.</p>
+                <p>To protect privacy of individuals concerned and for National security reasons the Crime and Criminal data and reports can be searched by authorized Police officers only. Citizens who seek criminal antecedent verification services will be provided responses through email.</p>
+                <p>The FIRNow portal is a SMART Policing initiative of Ministry of Home Affairs, to provide services to citizens and aid efficient Police investigations.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="serv">
+            <h2 id="sec2" style="color: rgb(0, 255, 132);">Services</h2>
+            <h4>FIR Registration</h4>
+            <p>1. Filing of Complaints to the concerned Police Station.<br>2. Details of arrested persons/wanted criminals.<br>3. Details of missing/kidnapped persons and their matching with arrested,<br>4. Details of stolen/recovered vehicles, arms and other properties.</p>
+            <h4>Track Status</h4>
+            <p>1. Obtaining the status of the complaints.<br>2. Obtaining the copies of FIRs.<br></p>
+            <h4>Crime Information</h4>
+            <p>1. Harassment<br>2. Cyber crime<br>3. Traffic Rulebreak<br>4. Human Trafficking<br>5. Document Forgery</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Copyright All Indian Police Department 2024 All Right Reserved.<br> Disclaimer | Privacy Policy Designed & Developed by Sampath</p>
+        <p>Contact us: <a href="mailto:firnow@gmail.com">firnow@gmail.com</a></p>
+    </footer>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "14c5968d-28ee-411b-b0e3-42fafbaa5ab3",
+            region: "au-syd",
+            serviceInstanceID: "d31845a0-fa5f-4e6f-bd4d-a9664472d06a",
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</body>
+</html>
